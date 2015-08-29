@@ -12,7 +12,8 @@ defined('_JEXEC') or die;
 // Note. It is important to remove spaces between elements.
 ?>
 <?php // The menu class is deprecated. Use nav instead. ?>
-<ul class="main_menu clearfix">
+<h2>Galleri</h2>
+<ul>
 <?php
 foreach ($list as $i => &$item)
 {
@@ -80,12 +81,7 @@ foreach ($list as $i => &$item)
 	// The next item is deeper.
 	if ($item->deeper)
 	{	
-		if($item->level == 1){
-			echo '<ul class="sub">';
-		} else {
-			echo '<ul class="sub2">';
-		}
-		
+		echo '<ul class="sub3">';
 	}
 	elseif ($item->shallower)
 	{

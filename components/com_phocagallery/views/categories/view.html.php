@@ -159,13 +159,19 @@ class PhocaGalleryViewCategories extends JViewLegacy
 		$model					= $this->getModel();
 		$this->tmpl['ordering']	= $model->getOrdering();
 		$this->categories		= $this->get('data');
-		
+		//T.Trung
+		if($this->params->get( 'show_parent_categories') == 1){
+			$this->category = $this->categories[0];
+		} else {
+			$this->category = $this->categories[1];
+		}
+		//T.Trung end
 		
 		// Add link and unset the categories which user cannot see (if it is enabled in params)
 		// If it will be unset while access view, we must sort the keys from category array - ACCESS
 		$unSet = 0;
 		foreach ($this->categories as $key => $item) {
-
+			
 			// Unset empty categories if it is set
 			if ($display_empty_categories == 0) {
 				if($this->categories[$key]->numlinks < 1) {

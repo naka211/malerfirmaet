@@ -12,7 +12,7 @@ defined('_JEXEC') or die;
 // Note. It is important to remove spaces between elements.
 ?>
 <?php // The menu class is deprecated. Use nav instead. ?>
-<ul class="main_menu clearfix">
+<ul class="list-cate">
 <?php
 foreach ($list as $i => &$item)
 {

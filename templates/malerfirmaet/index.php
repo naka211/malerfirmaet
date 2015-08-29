@@ -96,6 +96,8 @@ $tmpl = JURI::base()."templates/malerfirmaet/";
 			  textfield.setCustomValidity('Udfyld dette felt');  
 			}
 		});
+		
+		jQuery(".sub>li>a").append('<i class="fa fa-angle-right fa-lg fr cfff"></i>');
 	});
 	</script>
 </head>

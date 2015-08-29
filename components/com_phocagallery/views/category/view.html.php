@@ -566,7 +566,7 @@ class PhocaGalleryViewCategory extends JViewLegacy
 		}
 	   
 
-		$parentCategory = $this->get('parentcategory');  
+		$parentCategory = $this->get('parentcategory');
 
 		if ($display_back_button == 1) {
 			if (!empty($parentCategory)) {

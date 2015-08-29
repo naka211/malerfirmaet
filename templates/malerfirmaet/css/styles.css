@@ -181,7 +181,7 @@ footer a:hover { text-decoration: underline;}
      list-style: none;
      margin-bottom: 3px;
  }
-  .nav-left ul li.current a{
+  .sub3 li.current a{
      color: #0bbcd7;
   }
  .w_content2 {
@@ -282,7 +282,7 @@ ul.sub3 {
      padding: 5px 10px;
 }
 ul.sub3 li a {
-     color: #737373 !important;
+     color: #737373;
 }
 ul.sub3 li:hover a {
      color: #09cbe5 !important;
