@@ -1,17 +1,33 @@
 <?php
 defined('_JEXEC') or die;
 $tmpl = JURI::base()."templates/malerfirmaet/";
+
+//Detect mobile
+//session_start();
+$config = JFactory::getConfig();
+$showPhone = $config->get( 'show_phone' );
+$enablePhone = $config->get( 'enable_phone' );
+require_once 'Mobile_Detect.php';
+$detect = new Mobile_Detect;
+if(!isset($_SESSION['mobile'])){
+	if($detect->isMobile()){
+		$_SESSION['mobile'] = true;
+	}
+}
+if($showPhone){
+	$_SESSION['mobile'] = $showPhone;
+}
+if ( ($showPhone || $detect->isMobile()) && ($enablePhone) && ($_SESSION['mobile'])) {
+    include('index_mobile.php');
+    return;
+}
+//Detect mobile end
 ?>
 <!DOCTYPE html>
 <html>
 	<head>
 	<meta charset="utf-8">
 	<jdoc:include type="head" />
-	<!--<link href="images/fav.ico" rel="shortcut icon"/>
-	<meta name="description" content="">
-	<meta name="author" content="tho">
-	<link href="fav.ico" rel="shortcut icon" />
-	<title>Malerfirmaet-dlh</title>-->
 
 	<link rel="stylesheet" type="text/css" href="<?php echo $tmpl;?>css/reset.css">
 	<link type="text/css" href="<?php echo $tmpl;?>font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
@@ -97,7 +113,7 @@ $tmpl = JURI::base()."templates/malerfirmaet/";
 			}
 		});
 		
-		jQuery(".sub>li>a").append('<i class="fa fa-angle-right fa-lg fr cfff"></i>');
+		jQuery(".item-126 .sub>li>a").append('<i class="fa fa-angle-right fa-lg fr cfff"></i>');
 	});
 	</script>
 </head>

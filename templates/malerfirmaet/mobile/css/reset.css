@@ -1,0 +1,173 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, button,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background: transparent;
+	color:#737373;
+}
+body {
+	line-height: 1;
+	margin: 0 auto; 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px; 
+	background: #fff;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+}
+p {
+	margin: 0.8em 0 0.5em 0;
+	line-height: 1.35em; 
+}
+
+ul, ol {
+	list-style: none;
+}
+
+/* remember to highlight inserts somehow! */
+ins, a {
+	text-decoration: none;	
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border:0; 
+	border-collapse: collapse;
+	border-spacing:0; 
+	empty-cells:show; 
+	font-size:100%; 
+}
+table { margin-bottom: 5px; width: 100%; }
+
+th { font-weight: bold; }
+
+thead th { background: #f2e7d4; }
+
+tfoot { font-style: italic; }
+
+caption { background: #eee; }
+
+/* Clearfix
+-------------------------------------------------------------*/
+* html .clearfix {
+	height: 1%; /* IE5-6 */
+}
+
+html[xmlns] .clearfix { /* O */
+	display: block;  
+}
+
+.clearfix:after { /* FF, O, etc. */
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+*:first-child+html .clearfix { /* IE 7 */
+	display: inline-block;
+}
+
+/* Mis.
+-------------------------------------------------------------*/
+.clear, .divider {clear: both;}
+
+.no-display {display: none;}
+
+.display {display: block !important;}
+
+.nowrap,.nobr {white-space: nowrap !important;}
+
+.no-border { border: 0 !important;}
+.no-border-radius { 	border-radius: 0 !important;}
+
+.no-padding {padding: 0 !important}
+.no-margin 	{margin: 0 !important;}
+
+.pipe {	padding: 0 4px;	text-align: center;	color: #999999;}
+input, textarea { color: #555;}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /*font-style: italic;*/ color: #969696; font-family: Arial, Helvetica, sans-serif;} /*--- Chrome---*/
+input:-moz-placeholder, textarea:-moz-placeholder {  /*font-style: italic;*/ color: #969696; font-family: Arial, Helvetica, sans-serif; }
+input:-ms-input-placeholder, textarea:-moz-placeholder {  /*font-style: italic;*/  color: #969696; font-family: Arial, Helvetica, sans-serif; }
+/*--- Alignment---*/
+.v-top 		{vertical-align: top;}
+.v-middle	{vertical-align: middle;}
+.v-bottom 	{vertical-align: bottom;}
+
+.a-left		{text-align: left !important;}
+.a-center	{text-align: center;}
+.a-right		{text-align: right;}
+.left		{float: left;}
+.right	{float: right;}
+.normal-weight {font-weight: normal;}
+.auto-width {width: auto;}
+
+/*** Setting EX CSS ***/ 
+.relative { position: relative;}
+.absolute { position: absolute;} 
+.color-t {	color: #cc0000;}
+.l-h-0 	{	line-height: 0 ;}
+.l-h-15 {	line-height: 15px;}
+.l-h-20 {	line-height: 22px !important;}
+.l-h-45 {	line-height: 45px;}
+.m-l-0 	{	margin-left: 0 !important;}
+.m-l-10 {	margin-left: 10px;}
+.m-l-30s {	margin-left: -30px;}
+.m-l-115 {	margin-left: 115px;}
+.m-l-145 {	margin-left: 145px;}
+.m-r-0 	{	margin-right: 0 !important;}
+.m-r-5 	{	margin-right: 5px;}
+.m-r-10 {	margin-right: 10px;}
+.m-t-0 	{	margin-top: 0 !important;}
+.m-t-5 	{	margin-top: 5px !important;}
+.m-t-10 {	margin-top: 10px !important;}
+.m-t-15 {	margin-top: 15px !important;}
+.m-t-20 {	margin-top: 20px !important;}
+.m-t-25 {	margin-top: 25px !important;}
+.m-t-30 {	margin-top: 30px !important;}
+.m-t-50 {	margin-top: 50px !important;}
+.m-t-60 {	margin-top: 55px !important;}
+.l-h-15 {line-height: 15px !important;}
+.fr { float: right !important;}
+.fl { float: left !important;}
+.m-l-10 { margin-left: 10px;}
+.p-b-0 { padding-bottom: 0;}
+.m-b-0 { margin-bottom: 0;}
+.m-b-10 { margin-bottom: 10px;}
+.m-b-15 {margin-bottom: 15px;}
+.op-0 {	opacity: 0;}
+.f-w-bold {	font-weight: bold;} 
+.f-s-14 { font-size: 14px !important;}
+.f-s-15 { font-size: 15px !important;}
+.b-ra-5 { -webkit-border-radius: 5px;	-moz-border-radius: 5px;	border-radius: 5px;}
+.border-bot {border-bottom: 1px solid #5f5f5f;}
+.f-st-i {font-style: italic;}
+h1, h2, h3, h4, h5, h6 { font-size: 14px; color: #5f5f5f;} 
+
+
+
+
