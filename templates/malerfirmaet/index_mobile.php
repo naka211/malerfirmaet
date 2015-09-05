@@ -59,6 +59,11 @@ $tmpl = JURI::base()."templates/malerfirmaet/mobile/";
       });
     });
 </script>
+<script type="text/javascript">
+jQuery(document).ready(function () {
+	jQuery(".nav-left a").prepend('<i class="fa fa-angle-right fa-lg"></i>');
+});
+</script>
 </head>
 <body>
 <div id="page" class="clearfix">

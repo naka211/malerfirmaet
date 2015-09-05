@@ -247,7 +247,18 @@ ul.flex-direction-nav li {
 #banner .flex-caption h3 a {color: #105483;}
 
 /***13-08-2015***/
-.category a {
+/*.category a {
+	display: block;
+	padding: 10px 16px;
+	background: #46A4DD;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	text-align: center;
+	color: #fff;
+}*/
+
+.list-cate li {
 	display: block;
 	padding: 10px 16px;
 	background: #46A4DD;
@@ -258,15 +269,22 @@ ul.flex-direction-nav li {
 	color: #fff;
 }
 
+.list-cate{
+	margin-left:0 !important;
+}
+
+.list-cate a{
+	color:#fff;
+}
 .nav-left ul li ul {
 	padding-top: 10px;
 }
-.nav-left ul li.active a {
+.nav-left ul li.current a {
 	color: #0bbcd7;
 }
-.nav-left ul li ul li a {
+/*.nav-left ul li ul li a {
 	color: #055289 !important;
-}
+}*/
 
 
 

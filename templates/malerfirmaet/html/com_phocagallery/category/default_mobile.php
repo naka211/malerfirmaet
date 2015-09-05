@@ -1,26 +1,6 @@
 <?php
 defined('_JEXEC') or die('Restricted access'); 
 //print_r($this->items);exit;
-//Detect mobile
-//session_start();
-$config = JFactory::getConfig();
-$showPhone = $config->get( 'show_phone' );
-$enablePhone = $config->get( 'enable_phone' );
-require_once 'Mobile_Detect.php';
-$detect = new Mobile_Detect;
-if(!isset($_SESSION['mobile'])){
-	if($detect->isMobile()){
-		$_SESSION['mobile'] = true;
-	}
-}
-if($showPhone){
-	$_SESSION['mobile'] = $showPhone;
-}
-if ( ($showPhone || $detect->isMobile()) && ($enablePhone) && ($_SESSION['mobile'])) {
-    include('default_mobile.php');
-    return;
-}
-//Detect mobile end
 unset($this->items[0]);
 ?>
 
@@ -29,7 +9,7 @@ unset($this->items[0]);
 		<div class="nav-left">
 			{module Left Gallery Menu}
 		</div>
-		<div class="w_content2 clearfix">
+		<div class="w_content clearfix">
 			<h2 class="title_art"><?php echo $this->category->title;?> <a href="javascript:history.back()" class="link_back">Tilbage</a></h2>
 			<p><?php echo $this->category->description;?></p>
 			<section class="slider">
