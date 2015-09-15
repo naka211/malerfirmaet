@@ -195,6 +195,7 @@ if (empty($list['direction']))
     // Join over the users for the checked out user.
     $query->select('uc.name AS editor');
     $query->join('LEFT', '#__users AS uc ON uc.id=a.checked_out');
+	$query->order('a.id DESC');
     
 
 		

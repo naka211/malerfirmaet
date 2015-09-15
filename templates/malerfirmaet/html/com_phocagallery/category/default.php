@@ -30,6 +30,7 @@ unset($this->items[0]);
 			{module Left Gallery Menu}
 		</div>
 		<div class="w_content2 clearfix">
+			{module Breadcrumbs}
 			<h2 class="title_art"><?php echo $this->category->title;?> <a href="javascript:history.back()" class="link_back">Tilbage</a></h2>
 			<p><?php echo $this->category->description;?></p>
 			<section class="slider">

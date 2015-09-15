@@ -56,11 +56,11 @@ class OpinionsViewOpinion extends JViewLegacy {
         JToolBarHelper::title(JText::_('COM_OPINIONS_TITLE_OPINION'), 'opinion.png');
 
         // If not checked out, can save the item.
-        if (!$checkedOut && ($canDo->get('core.edit') || ($canDo->get('core.create')))) {
+        //if (!$checkedOut && ($canDo->get('core.edit') || ($canDo->get('core.create')))) {
 
             JToolBarHelper::apply('opinion.apply', 'JTOOLBAR_APPLY');
             JToolBarHelper::save('opinion.save', 'JTOOLBAR_SAVE');
-        }
+        //}
         if (!$checkedOut && ($canDo->get('core.create'))) {
             JToolBarHelper::custom('opinion.save2new', 'save-new.png', 'save-new_f2.png', 'JTOOLBAR_SAVE_AND_NEW', false);
         }

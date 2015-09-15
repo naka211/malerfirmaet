@@ -3,6 +3,7 @@ defined('_JEXEC') or die('Restricted access');
 ?>
 <div class="template clearfix">
 	<div class="w_content clearfix"> 
+		{module Breadcrumbs}
 		<h2 class="title_art"><?php echo $this->category->title_self;?></h2> 
 		<?php echo $this->category->description;?>
 		<ul class="list_galleri">

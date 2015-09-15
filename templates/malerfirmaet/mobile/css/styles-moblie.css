@@ -6,7 +6,7 @@ img { max-width: 100% !important;}
 
 /**SETTING  **/
 #page nav {	display: none; } 
-div#container { width: 100%; clear: both; margin: 112px auto 0em auto;  }
+div#container { width: 100%; clear: both; margin: 112px auto 0 auto; padding-bottom: 30px; }
 .mm-list > li > a.current_page { background: #06558d; }
 .w_bntMenuleft { 
 	padding: 0.5em;
@@ -286,7 +286,19 @@ ul.flex-direction-nav li {
 	color: #055289 !important;
 }*/
 
-
+.flex-direction-nav {display: none; }
+html {
+    position:relative;
+    min-height: 100%;
+}
+#page {
+ margin-bottom: 84px;
+}
+footer {
+ position: absolute;
+ bottom: 0;
+ height: 64px;
+}
 
 
 /********** ---------------------- CSS MOBILE & TABEL FORM HERE ----------------------------- CSS MOBILE & TABEL FORM HERE  ------------------- **********/ 

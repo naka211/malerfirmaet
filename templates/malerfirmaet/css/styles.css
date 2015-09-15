@@ -14,6 +14,7 @@ table td { line-height: 16px; text-align: justify; }
 
 p b { color: #555;}
 p a , ul li a {color: #055289;}
+.breadcrumb span {color: #055289;}
 a:hover { text-decoration: underline;}
 h2.title_art { color: #3c3f44; font-weight:  bold; font-size: 18px; border-bottom: 1px solid #49831c; padding: 0 0 6px 0; line-height: 24px; margin-bottom: 15px; text-transform: uppercase; padding-top: 15px;}
 h2.title_art .link_back { float: right; font-size: 12px; color: #5e95cb; font-weight: normal;background: url(../img/i_back.png) 0 8px no-repeat ; padding-left: 10px;margin-top: 5px; text-transform: none; } 
@@ -81,8 +82,8 @@ ul.main_menu > li { float: left;    padding: 15px 0; position: relative;z-index:
 ul.main_menu > li > a  { font-size: 12px; padding:  14px 10px ; text-align: center; color: #fff; text-transform: uppercase;  }
 ul.main_menu > li:first-child a {  } 
 ul.main_menu > li:last-child a { } 
-ul.main_menu > li:hover > a, .current_page {background: url(../img/bg_hover.png) 0 0 repeat-x;}
-.current_page { border-left: 1px solid #a5a5a5; border-right: 1px solid #a5a5a5;   }
+ul.main_menu > li:hover > a, ul.main_menu > li.active > a {background: url(../img/bg_hover.png) 0 0 repeat-x;}
+ul.main_menu > li.active > a { border-left: 1px solid #a5a5a5; border-right: 1px solid #a5a5a5;   }
 ul.main_menu > li  a {text-decoration: none;}
 ul.main_menu li ul.sub { position: absolute; z-index: 9999;  left: 0; top: 20px; margin-top: 10px; padding-top: 12px; min-width: 200px; display: none;}
 ul.main_menu li ul li { background: #115586; border: 1px solid #2c79b1; border-top: none;  padding: 10px 16px; 	 }
@@ -181,7 +182,7 @@ footer a:hover { text-decoration: underline;}
      list-style: none;
      margin-bottom: 3px;
  }
-  .sub3 li.current a{
+  /*.sub3*/ li.current a{
      color: #0bbcd7;
   }
  .w_content2 {
@@ -190,11 +191,11 @@ footer a:hover { text-decoration: underline;}
  }
  
  ul.breadcrumb {
-     padding-top: 25px;
-     padding-bottom: 15px;
+     padding-top: 15px;
+     /*padding-bottom: 15px;*/
      margin-left: 0;
-     border-bottom: 1px solid #ccc;
-     margin-bottom: 15px;
+     /*border-bottom: 1px solid #ccc;
+     margin-bottom: 15px;*/
  }
  
  ul.breadcrumb li {
@@ -287,6 +288,9 @@ ul.sub3 li a {
 ul.sub3 li:hover a {
      color: #09cbe5 !important;
 }
+ul.sub3 li.current a {
+     color: #09cbe5 !important;
+}
 .fr {float: right;}
 .cfff {color: #fff;}
 /*.nav-left h2 {
@@ -294,3 +298,10 @@ ul.sub3 li:hover a {
      padding-bottom: 10px;
      margin-right: 10px;
 }*/
+#carousel img{
+	height:115px;
+}
+
+#slider img{
+	height:450px;
+}

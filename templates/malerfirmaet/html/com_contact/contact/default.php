@@ -1,7 +1,14 @@
 <?php
 defined('_JEXEC') or die;
 JHtml::_('behavior.formvalidator');
+$tmpl = JURI::base().'templates/malerfirmaet/mobile/';
 ?>
+<script type="text/javascript" src="<?php echo $tmpl;?>js/jquery.h5validate.js"></script>
+<script>
+jQuery(document).ready(function () {
+    jQuery('form').h5Validate();
+});
+</script>
 <div class="template clearfix">
 	<div class="w_content clearfix"> 
 		<h2 class="title_art">Kontakt</h2> 
